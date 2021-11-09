@@ -39,7 +39,7 @@
 <section class="hero-section">
     <div class="container">
     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-    <button type="button" class="hero-button accent">Заказать услугу</button>
+    <button type="button" class="hero-button accent" data-modal-open>Заказать услугу</button>
     </div>
 </section>
 <!--company rules-->
@@ -91,9 +91,18 @@
 <div class="container">
 <h2 class="how-we-do-section-h2">Чем мы занимаемся</h2>
 <ul class="how-we-do-section-ul">
-    <li class="how-we-do-item"><img src="images/img1_HowWeDo.jpg" alt="Человек работает на клаасном рабочем месте" width="370"></li>
-    <li class="how-we-do-item"><img src="images/img2_HowWeDo.jpg" alt="Разрабатывается приложение на телефон" width="370"></li>
-    <li class="how-we-do-item"><img src="images/img3_HowWeDo.jpg" alt="Изображение мозаики на планшете" width="370"></li>
+    <li class="how-we-do-item">
+        <img src="images/img1_HowWeDo.jpg" alt="Человек работает на клаасном рабочем месте" width="370">
+        <p>десктопные приложения</p>
+    </li>
+    <li class="how-we-do-item">
+        <img src="images/img2_HowWeDo.jpg" alt="Разрабатывается приложение на телефон" width="370">
+        <p>мобильные приложения</p>
+    </li>
+    <li class="how-we-do-item">
+        <img src="images/img3_HowWeDo.jpg" alt="Изображение мозаики на планшете" width="370">
+        <p>дизайнерские решения</p>
+    </li>
 </ul>
 </div>
 </section>
@@ -301,5 +310,11 @@
     </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-modal" data-modal-close></button>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
 </body>
 </html>
