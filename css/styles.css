@@ -743,6 +743,7 @@ img {
   top: 0;
   left: 0;
   bottom: 0;
+  max-width: 370px;
   padding-top: 63px;
   padding-right: 24px;
   padding-left: 24px;
@@ -756,6 +757,7 @@ img {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   transform: translateY(100%);
+  overflow: auto;
 }
 
 .our-products-item-link:hover .overlay > p {
