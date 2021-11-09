@@ -108,8 +108,6 @@ img {
 .nav-links-item:focus,
 .auth-links-item:hover,
 .auth-links-item:focus {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -140,6 +138,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .nav-links-item.current::after {
@@ -166,6 +166,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .nav-links,
@@ -197,12 +199,12 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
   color: var(--primary-white-color);
   background-color: var(--hero-button-accent-bcg-color);
 }
@@ -221,12 +223,12 @@ img {
   cursor: pointer;
   padding: 6px 22px 6px 22px;
   transition-property: color, background-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .filter-item-btn:hover,
 .filter-item-btn:focus {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -352,8 +354,13 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--client-icons-color);
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
   transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
+
 .social-link:hover,
 .social-link:focus {
   border-radius: 50%;
@@ -364,8 +371,6 @@ img {
   align-items: center;
   justify-content: center; */
   color: currentColor;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .social-links-item:not(:last-child) {
   margin-right: 10px;
@@ -379,8 +384,6 @@ img {
 .social-link:hover .social-links-icons,
 .social-link:focus .social-links-icons {
   fill: #ffffff;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 
 .social-links-icons {
@@ -388,6 +391,8 @@ img {
   height: 20px;
   fill: currentColor;
   transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .regular-clients {
@@ -430,15 +435,15 @@ img {
   color: var(--client-icons-color);
   border: 1px solid var(--client-icons-color);
   border-radius: 4px;
-  transition-property: fill, color;
+  transition-property: fill, color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .regular-clients-link:hover,
 .regular-clients-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  border-color: var(--accent-color);
 }
 
 .regular-clients-icons {
@@ -505,12 +510,12 @@ img {
   color: currentColor;
   display: block;
   transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .our-products-item-link:hover,
 .our-products-item-link:focus {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -564,6 +569,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--footer-auth-text-color);
   transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .nav-links-item-footer:hover,
@@ -571,8 +578,6 @@ img {
 .auth-links-item-footer:hover,
 .auth-links-item-footer:focus {
   color: var(--accent-color);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 
 .company-rules-section {
@@ -663,12 +668,12 @@ img {
   border-radius: 50%;
   background-color: var(--join-link-bg-color);
   transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .join-link:hover,
 .join-link:focus {
   background-color: var(--accent-color);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 
 .join-links-icons {
@@ -684,25 +689,17 @@ img {
   border: 1px solid #eeeeee;
   background: #ffffff;
   transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .card:hover,
 .card:focus {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* display: none; */
-  /* pointer-events: none; */
-
-  background-color: rgba(0, 0, 0, 0.2);
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
@@ -712,7 +709,9 @@ img {
   background-color: var(--primary-white-color);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .close-modal {
@@ -727,11 +726,25 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+  /* pointer-events: none; */
 
-.is-hidden {
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
 }
 
 .overlay {
@@ -758,10 +771,11 @@ img {
   color: var(--primary-white-color);
   transform: translateY(100%);
   overflow: auto;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .our-products-item-link:hover .overlay > p {
   transform: translateY(0);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
