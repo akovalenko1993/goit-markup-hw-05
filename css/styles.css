@@ -145,7 +145,7 @@ img {
 .nav-links-item.current::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 
   display: block;
   width: 100%;
@@ -198,14 +198,13 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition-property: color, background-color;
+  transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--primary-white-color);
   background-color: var(--hero-button-accent-bcg-color);
 }
 
@@ -295,16 +294,21 @@ img {
   position: relative;
 }
 
-.how-we-do-item > p {
+.how-we-do-text {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-
-  color: var(--primary-white-color);
+  height: 70px;
+  width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
+}
+.how-we-do-text > p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* outline: 3px solid yellow; */
+  width: 100%;
+  color: var(--primary-white-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -484,6 +488,7 @@ img {
 }
 .footer .auth-links {
   margin-top: 9px;
+  margin-right: 0;
 }
 .our-products {
   padding-top: 94px;
@@ -769,13 +774,14 @@ img {
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  transform: translateY(100%);
+  transform: translateY(101%);
   overflow: auto;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
 
-.our-products-item-link:hover .overlay > p {
+.our-products-item-link:hover .overlay > p,
+.our-products-item-link:focus .overlay > p {
   transform: translateY(0);
 }
